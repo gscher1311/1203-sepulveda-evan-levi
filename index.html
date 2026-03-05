@@ -312,6 +312,122 @@
   }
   .footer-logo { color: var(--navy); font-weight: 700; letter-spacing: 2px; }
 
+  /* ── Mobile / Responsive ── */
+  @media (max-width: 768px) {
+    body {
+      padding: 0 16px 40px;
+      max-width: 100%;
+    }
+    .cover {
+      padding: 24px 20px 20px;
+      margin: 0 -16px 0;
+    }
+    .cover-title {
+      font-size: 20px;
+    }
+    .cover-subtitle {
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .cover-meta {
+      flex-wrap: wrap;
+      gap: 12px 24px;
+      font-size: 11px;
+    }
+    .email-header {
+      padding: 12px 14px;
+      font-size: 11.5px;
+      line-height: 1.7;
+    }
+    .intro {
+      font-size: 14px;
+    }
+    .section-block {
+      margin-top: 32px;
+      padding-top: 18px;
+    }
+    .section-title {
+      font-size: 18px;
+    }
+    .value-cards {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .value-card {
+      min-width: 0;
+    }
+    .value-large {
+      font-size: 22px;
+    }
+
+    /* Horizontal-scroll wrapper for tables */
+    table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      font-size: 11.5px;
+    }
+    thead, tbody, tr, th, td {
+      white-space: normal;
+    }
+    thead th {
+      padding: 7px 10px;
+      font-size: 10px;
+      min-width: 80px;
+    }
+    tbody td {
+      padding: 6px 10px;
+      min-width: 80px;
+    }
+
+    .step {
+      gap: 10px;
+    }
+    .step-content {
+      font-size: 13px;
+    }
+    .callout, .callout-navy, .callout-warn {
+      padding: 12px 14px;
+      font-size: 13px;
+    }
+    .signature {
+      margin-top: 32px;
+      padding-top: 20px;
+    }
+    .page-footer {
+      flex-direction: column;
+      gap: 8px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 12px;
+      margin: 20px 0 10px;
+    }
+    ul {
+      margin-left: 16px;
+    }
+    ul li {
+      font-size: 13px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .cover-title {
+      font-size: 17px;
+    }
+    .cover-meta {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .value-large {
+      font-size: 20px;
+    }
+    .section-title {
+      font-size: 16px;
+    }
+  }
+
   /* ── Print styles ── */
   @media print {
     body { font-size: 11px; max-width: 100%; padding: 0; }
